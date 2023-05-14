@@ -63,6 +63,8 @@ Run `script/compile`. This requires `GRAALVM_HOME` to be set.
 
 Run tests by running  `bb test/test_pod.bb` and `bb test/test_client.bb`
 
+Where bb has version 1.3.180 (currently a dev build) or greater.
+
 ## License
 
 Copyright © 2023 
