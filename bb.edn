@@ -1,0 +1,8 @@
+{:paths ["src/bb" ".build"]
+ :deps {babashka/pods  {:git/url "https://github.com/babashka/pods.git"
+                        :git/sha "6ad6045b94bc871c5107bfc75d39643b6c1bc8ba"}
+        io.github.borkdude/gh-release-artifact
+        {:git/sha "db5e79559fdbfa009ed4a0921079e20e1e76b269"}}
+ :tasks
+ {uber (clojure "-T:build uber")
+  release-artifact {:task (exec 'release-artifact/release)}}}
